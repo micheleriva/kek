@@ -82,6 +82,6 @@ export const compile = stringToParse => {
     tempSentence = tempSentence.replace(declaredType, _randomTypes[type])
   }
 
-  return tempSentence.replace(/\n/gi, '')
+  return tempSentence.replace(/\n|\s{2,}/gi, '')
 
 }
