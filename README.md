@@ -6,7 +6,7 @@ A supercazzola generator highly inspired by [Polygen](http://www.polygen.org/it/
 
 # Usage
 
-Create a new file with a .kek extension and write your *kek* program using the *kek* syntax:
+Create a new file with a .kek extension and write your **kek** program using the **kek** syntax:
 
 ```kek
 S:= Come fosse #Persona in #Luogo mentre #Azione #Oggetto
@@ -30,6 +30,10 @@ T:= Luogo
 ```
 
 now run the *kek* interpreter and see the result:
+
+```sh
+$ kek ./mykekprogram.kek
+```
 
 `Come fosse Antani in ufficio mentre fa dudu su la supercazzola`
 
