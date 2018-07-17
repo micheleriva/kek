@@ -1,0 +1,23 @@
+{
+  "name": "kek",
+  "version": "0.0.1",
+  "description": "JavaScript version of Polylang.",
+  "main": "./dist/dist.js",
+  "author": "Michele Riva",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "rollup-watch": "^4.3.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "runit": "node ./dist/dist.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}

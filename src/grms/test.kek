@@ -1,0 +1,18 @@
+S:= Come fosse #Persona in #Luogo mentre #Azione #Oggetto
+
+T:= Persona
+  | Antani
+  | il Conte Mascetti
+
+T:= Azione
+  | prematura
+  | fa dudu su
+
+T:= Oggetto
+  | la supercazzola
+  | il dito indice
+
+T:= Luogo
+  | prefettura
+  | classe
+  | ufficio
