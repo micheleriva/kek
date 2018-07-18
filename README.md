@@ -1,5 +1,7 @@
 # 🗣 Kek
 
+[![Build Status](https://travis-ci.org/micheleriva/kek.svg?branch=master)](https://travis-ci.org/micheleriva/kek)
+
 A supercazzola generator highly inspired by [Polygen](http://www.polygen.org/it/grammatiche/rubriche/ita/ricette.grm)
 
 # Still a work in progress
