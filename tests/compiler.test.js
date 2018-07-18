@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { compile } from '../src/compiler/index'
+import compile from '../'
 
 const antani  = fs.readFileSync(__dirname + '/keks/antani.kek',  'utf8')
 const ricetta = fs.readFileSync(__dirname + '/keks/ricetta.kek', 'utf8')

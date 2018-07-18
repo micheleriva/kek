@@ -1,7 +1,7 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (factory());
+  (global.dist = factory());
 }(this, (function () { 'use strict';
 
   /**
@@ -77,11 +77,6 @@
 
   };
 
-  const fs = require('fs');
-
-  const kek = fs.readFileSync('./tests/keks/ricetta.kek', 'utf8');
-  const res = compile(kek);
-
-  console.log(res);
+  return compile;
 
 })));
