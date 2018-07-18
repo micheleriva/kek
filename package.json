@@ -16,8 +16,5 @@
     "dev": "rollup -c -w",
     "runit": "node ./dist/dist.js",
     "test": "jest"
-  },
-  "dependencies": {
-    "ramda": "^0.25.0"
   }
 }

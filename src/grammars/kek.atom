@@ -1,0 +1,37 @@
+'fileTypes' : [
+  'kek'
+]
+'name' : 'kek'
+'patterns' : [
+  {
+    'include' : '#main'
+  }
+]
+'scopeName' : 'source.kek'
+'uuid' : ''
+'repository' : {
+  'main' : {
+    'patterns' : [
+      {
+        'match' : '(^\\w{1}:=)'
+        'name' : 'keyword.kek'
+      }
+      {
+        'match' : '(#\\w+)'
+        'name' : 'keyword.kek'
+      }
+      {
+        'match' : '(\\w+)'
+        'name' : 'keyword.kek'
+      }
+      {
+        'match' : '(\\|)'
+        'name' : 'keyword.kek'
+      }
+      {
+        'match' : '(\\V(\\w{1})+)'
+        'name' : 'keyword.kek'
+      }
+    ]
+  }
+}

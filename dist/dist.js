@@ -78,7 +78,7 @@
       tempSentence = tempSentence.replace(declaredType, _randomTypes[type]);
     }
 
-    return tempSentence.replace(/\n|\s{2,}/gi, '')
+    return tempSentence.replace(/\n|\s{2,}/gi, ' ')
 
   };
 

@@ -1,0 +1,26 @@
+%YAML 1.2
+---
+name: kek
+scope: source.kek
+file_extensions: [ kek ]
+
+contexts:
+  main:
+    - match: '(^\w{1}:=)'
+      captures:
+        0: keyword.kek
+    - match: '(#\w+)'
+      captures:
+        0: keyword.kek
+    - match: '(\w+)'
+      captures:
+        0: keyword.kek
+    - match: '(\|)'
+      captures:
+        0: keyword.kek
+    - match: '(\V(\w{1})+)'
+      captures:
+        0: keyword.kek
+    - match: '(.)'
+      captures:
+        0: text.kek
