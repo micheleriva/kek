@@ -1,11 +1,11 @@
-S:= #Azione #Quantità #Misura di #Prodotto
+S:= #Azione #Quantita#Misura di #Prodotto
 
 T:= Azione
   | Piglia
   | Acchiappa
   | Prendi
 
-T:= Quantità
+T:= Quantita
   | 10
   | 2
   | 50

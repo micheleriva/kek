@@ -14,7 +14,8 @@ test('Testing Antani.kek', () => {
 
 test('Testing Ricetta.kek', () => {
   const result = compile(ricetta);
-  const noHashes = result.indexOf('#') === -1  
+  const noHashes = result.indexOf('#') === -1
+  const noSlahN  = result.match(/\n/gi)
   expect(noHashes).toBeTruthy()
   expect(noSlahN).toBeFalsy()
 })

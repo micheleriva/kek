@@ -62,17 +62,18 @@
     const _randomTypes = {};
 
     for(let type in _types) {
-      Object.assign(_randomTypes, {[type]: randomItem(_types[type])});
+      Object.assign(_randomTypes, {[type]: randomItem(_types[type]).match(/\w+/)[0]});
     }
 
     let tempSentence = _sentence;
 
     for(let type in _randomTypes) {
-      const declaredType = `#${type}`.replace(/\s/ig, '').replace(/\n/ig, '');
+      const pureType = type.match(/\w+/)[0];
+      const declaredType = `#${pureType}`;
       tempSentence = tempSentence.replace(declaredType, _randomTypes[type]);
     }
 
-    return tempSentence.replace(/\n|\s{2,}/gi, ' ')
+    return tempSentence
 
   };
 
