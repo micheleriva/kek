@@ -5,12 +5,6 @@
 }(this, (function () { 'use strict';
 
   /**
-   * @method phrases
-   * @param {String} stringToParse 
-   * @returns {Array<String>}
-   */
-
-  /**
    * @method types
    * @param {String} stringToParse 
    * @returns {Object}
@@ -62,8 +56,8 @@
 
   const compile = stringToParse => {
     
-    const _sentence        = main(stringToParse);
-    const _types           = types(stringToParse);
+    const _sentence = main(stringToParse);
+    const _types    = types(stringToParse);
 
     const _randomTypes = {};
 

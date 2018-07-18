@@ -1,12 +1,4 @@
 /**
- * @method phrases
- * @param {String} stringToParse 
- * @returns {Array<String>}
- */
-
-export const phrases = stringToParse => stringToParse.split(';')
-
-/**
  * @method types
  * @param {String} stringToParse 
  * @returns {Object}
@@ -43,14 +35,6 @@ export const types = stringToParse => {
 export const main = stringToParse => stringToParse.match(/^S:=.+/)[0].replace(/^S:=\s/, '')
 
 /**
- * @method declaredTypes
- * @param {String} stringToParse
- * @returns {Array<String>}
- */
-
-export const declaredTypes = stringToParse => stringToParse.match(/#\w+/g)
-
-/**
  * @method randomItem
  * @param {Array<any>} array
  * @returns {String}
@@ -66,8 +50,8 @@ export const randomItem = array => array[Math.floor(Math.random() * array.length
 
 export const compile = stringToParse => {
   
-  const _sentence        = main(stringToParse)
-  const _types           = types(stringToParse)
+  const _sentence = main(stringToParse)
+  const _types    = types(stringToParse)
 
   const _randomTypes = {}
 
