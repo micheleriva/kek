@@ -78,7 +78,7 @@
 
   const fs = require('fs');
 
-  const kek = fs.readFileSync('./src/keks/test.kek', 'utf8');
+  const kek = fs.readFileSync('./tests/keks/ricetta.kek', 'utf8');
   const res = compile(kek);
 
   console.log(res);

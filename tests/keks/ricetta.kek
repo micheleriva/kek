@@ -1,0 +1,22 @@
+S:= #Azione #Quantità #Misura di #Prodotto
+
+T:= Azione
+  | Piglia
+  | Acchiappa
+  | Prendi
+
+T:= Quantità
+  | 10
+  | 2
+  | 50
+  | 300
+
+T:= Misura
+  | kg
+  | g
+
+T:= Prodotto
+  | banane
+  | farina
+  | cemento
+  | fragole
